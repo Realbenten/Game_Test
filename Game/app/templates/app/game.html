@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Front End Project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+    <link rel="stylesheet" href="{% static 'app/game.css' %}"></link>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container-fluid">
+      <h1 class="head">WELCOME TO THE BALL GAME</h1>
+      <img class="imggame" src="https://i.pinimg.com/originals/72/3d/0a/723d0af616b1fe7d5c7e56a3532be3cd.png" alt="" width="100px">
+      </div>
+    </div>
+        <div class="container-fluid">
+          <div class="check">
+        <h1 id="readyhead">Ready for game.</h1>
+        <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-outline-success" type="button" name="Start">Start</button>
+        <!-- <input class="btn btn-outline-success" type="button" name="" value="Start"> -->
+          </div>
+        </div>
+
+        <div class="showing">
+        <div class="Entry" align="center">
+             <label>Enter <span id="bluemem">Blue Team Member</span> Name:-</label>
+             <input id="entername1" type="Name" name="Username" placeholder="Enter Your Name">
+             <input class="btn btn-outline-primary" type="submit" name="" value="Enter">
+        </div>
+        </div>
+        <div class="showing2">
+        <div class="Entry2" align="center">
+             <label>Enter <span id="redmem">Red Team Member</span> Name:-</label>
+             <input id="entername2" type="Name" name="Username" placeholder="Enter Your Name">
+             <input class="btn btn-outline-danger" type="submit" name="" value="Enter">
+        </div>
+        </div>
+        <div class="entrytext">
+          <h1 class="letplay">Let's Play</h1>
+          <h2 id="matchintro1">Match Same Color Any type</h2>
+        </div>
+        <div  align="center">
+        <table class="board">
+          <tr>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+          </tr>
+          <tr>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+            <td><button type="button" class="boardbutton"></button></td>
+          </tr>          <tr>
+                      <td><button type="button" class="boardbutton"></button></td>
+                      <td><button type="button" class="boardbutton"></button></td>
+                      <td><button type="button" class="boardbutton"></button></td>
+                      <td><button type="button" class="boardbutton"></button></td>
+                      <td><button type="button" class="boardbutton"></button></td>
+                      <td><button type="button" class="boardbutton"></button></td>
+                      <td><button type="button" class="boardbutton"></button></td>
+                    </tr>          <tr>
+                                <td><button type="button" class="boardbutton"></button></td>
+                                <td><button type="button" class="boardbutton"></button></td>
+                                <td><button type="button" class="boardbutton"></button></td>
+                                <td><button type="button" class="boardbutton"></button></td>
+                                <td><button type="button" class="boardbutton"></button></td>
+                                <td><button type="button" class="boardbutton"></button></td>
+                                <td><button type="button" class="boardbutton"></button></td>
+                              </tr>          <tr>
+                                          <td><button type="button" class="boardbutton"></button></td>
+                                          <td><button type="button" class="boardbutton"></button></td>
+                                          <td><button type="button" class="boardbutton"></button></td>
+                                          <td><button type="button" class="boardbutton"></button></td>
+                                          <td><button type="button" class="boardbutton"></button></td>
+                                          <td><button type="button" class="boardbutton"></button></td>
+                                          <td><button type="button" class="boardbutton"></button></td>
+                                        </tr>          <tr>
+                                                    <td><button type="button" class="boardbutton"></button></td>
+                                                    <td><button type="button" class="boardbutton"></button></td>
+                                                    <td><button type="button" class="boardbutton"></button></td>
+                                                    <td><button type="button" class="boardbutton"></button></td>
+                                                    <td><button type="button" class="boardbutton"></button></td>
+                                                    <td><button type="button" class="boardbutton"></button></td>
+                                                    <td><button type="button" class="boardbutton"></button></td>
+                                              </tr>
+        </table>
+        </div>
+        <script src="{% static 'app/game.js' %}"></script>
+        <!-- <script src="project2.js"></script> -->
+  </body>
+</html>
